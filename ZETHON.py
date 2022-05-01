@@ -10,8 +10,8 @@ except KeyError:
 if __name__ == "__main__":
 	os.system("git pull")
 	if "Nigeria" == fc:
-        if "Bangladesh" == fc:
-        if "Pakistan" == fc:
+     if "Bangladesh" == fc:
+       if "Pakistan" == fc:
 		__import__("ZETHON").login()
 	else:
 		__import__("ZETHON32").login()
