@@ -1,4 +1,4 @@
-M = '\x1b[1;91m'
+P = '\x1b[1;97'
 import os,requests
 xr = requests.get("http://ip-api.com/json/").json()
 try:
@@ -10,6 +10,8 @@ except KeyError:
 if __name__ == "__main__":
 	os.system("git pull")
 	if "Nigeria" == fc:
+        if "Bangladesh" == fc:
+        if "Pakistan" == fc:
 		__import__("ZETHON").login()
 	else:
 		__import__("ZETHON32").login()
