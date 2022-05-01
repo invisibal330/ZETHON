@@ -1,13 +1,14 @@
-import os,platform
+import os, platform
+try:
+   import requests
+except:
+   os.system('pip2 install requests')
 
-comb =platform.architecture()[0]
-
-if __name__ == "__main__":
-	os.system("git pull")
-	if comb == "64bit":
-		__import__("ZETHON64").login()
-	elif comb == "32bit":
-		__import__("ZETHON32").login()
-	else:
-		print("UNKNOWN SYSTEM ")
-		exit()
+import requests
+bit = platform.architecture()[0]
+if bit == '64bit':
+    from ZETHON64 import login
+    login()
+elif bit == '32bit':
+    from ZETHON32 import login
+    login()
