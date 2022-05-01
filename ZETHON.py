@@ -1,8 +1,13 @@
-import os
+import os,platform
+
+comb =platform.architecture()[0]
 
 if __name__ == "__main__":
-   try:
-       os.system("git pull")
-       __import__("ZETHON").login()
-   except Exception as a:
-       exit(str(a))
+	os.system("git pull")
+	if comb == "64bit":
+		__import__("ZETHON").login()
+	elif comb == "32bit":
+		__import__("ZETHON64").login()
+	else:
+		print("UNKNOWN SYSTEM ")
+		exit()
