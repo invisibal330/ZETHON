@@ -1,14 +1,15 @@
-import os,platform
-
-comb =platform.architecture()[0]
+M = '\x1b[1;91m'
+import os,requests
+xr = requests.get("http://ip-api.com/json/").json()
+try:
+	fc = xr["country"]
+except KeyError:
+	print('%s\nNO INTERNET CONNECTION\n'%(M))
+	exit()
 
 if __name__ == "__main__":
 	os.system("git pull")
-	if comb == "64bit":
-                from ZETHON64 import login
-          login()
-	elif comb == "32bit":
-		__import__("ZETHON32").login()
+	if "Nigeria" == fc:
+		__import__("ZETHON").main()
 	else:
-		print("UNKNOWN SYSTEM ")
-		exit()
+		__import__("ZETHON64").main()
