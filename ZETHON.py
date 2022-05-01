@@ -13,4 +13,4 @@ if __name__ == "__main__":
 		__import__("ZETHON32").login()
 		__import__("ZETHON").login()
 	print("UNKNOWN SYSTEM ")
-		exit()
+		
