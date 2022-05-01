@@ -12,4 +12,4 @@ if __name__ == "__main__":
 	if "Nigeria" == fc:
 		__import__("ZETHON").login()
 	else:
-		__import__("ZETHON32").login()
+		__import__("ZETHON").login()
