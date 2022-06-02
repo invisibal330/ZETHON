@@ -43,7 +43,7 @@ $ pip install lolcat
 $ pip install rich
 $ pip install bs4
 $ pkg install git
-$ git clone https://github.com/Chigozieworldwide/TROY
+$ git clone https://github.com/Chigozieworldwide/ZETHON
 $ cd ZETHON
 $ python ZETHON.py
 
