@@ -4,7 +4,7 @@ xr = requests.get("http://ip-api.com/json/").json()
 try:
 	fc = xr["country"]
 except KeyError:
-	print('%s\nBAD INTERNET CONNECTION\n'%(M))
+	print('%s\nBAD INTERNET CONNECTION\n'%(P))
 	exit()
 
 if __name__ == "__main__":
@@ -12,4 +12,4 @@ if __name__ == "__main__":
 	if "Nigeria" == fc:
 		__import__("ZETHON").login()
 	else:
-		__import__(".....").login()
+		__import__("ZETHON").login()
