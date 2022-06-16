@@ -11,6 +11,7 @@ os.system('termux-setup-storage')
 #except:pass
 try:os.system('touch .prox.txt')
 except:pass
+import os,requests
 xr = requests.get("http://ip-api.com/json/").json()
 try:
 	fc = xr["country"]
