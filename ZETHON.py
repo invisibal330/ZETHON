@@ -1,15 +1,3 @@
-import platform
-import os
-os.system('termux-setup-storage')
-#os.system('git pull')
-#try:os.system('mkdir /sdcard/Chi-DATA')
-#except:pass
-#try:os.system('mkdir /sdcard/Chi-DATA/OK')
-#except:pass
-#try:os.system('mkdir /sdcard/Chi-DATA/CP')
-#except:pass
-try:os.system('touch .prox.txt')
-except:pass
 P = '\x1b[1;97m'
 import os,requests
 xr = requests.get("http://ip-api.com/json/").json()
