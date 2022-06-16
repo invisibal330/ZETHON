@@ -12,8 +12,8 @@ try:os.system('touch .prox.txt')
 except:pass
 arc = str(platform.uname().machine)
 if 'arm' in arc:
-        __import__("ZETHON").login_()
+        __import__("ZETHON").login()
 elif 'aarch' in arc:
-        __import__("ZETHON").login_()
+        __import__("ZETHON").login()
 else:
         exit(f' Unknow device machine {arc}')
