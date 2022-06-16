@@ -3,11 +3,11 @@ import platform
 import os
 os.system('termux-setup-storage')
 #os.system('git pull')
-#try:os.system('mkdir /sdcard/PROHACK-DATA')
+#try:os.system('mkdir /sdcard/Chi-DATA')
 #except:pass
-#try:os.system('mkdir /sdcard/PROHACK-DATA/OK')
+#try:os.system('mkdir /sdcard/Chi-DATA/OK')
 #except:pass
-#try:os.system('mkdir /sdcard/PROHACK-DATA/CP')
+#try:os.system('mkdir /sdcard/Chi-DATA/CP')
 #except:pass
 try:os.system('touch .prox.txt')
 except:pass
